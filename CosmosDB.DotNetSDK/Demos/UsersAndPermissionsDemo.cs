@@ -209,10 +209,6 @@ namespace CosmosDb.DotNetSdk.Demos
 				{
 					var document = await restrictedClient.CreateDocumentAsync(collectionLink, documentDefinition);
 					Console.WriteLine($"Successfully created document: {document.Resource.id}");
-
-					var options = new RequestOptions { PartitionKey = new PartitionKey("Brooklyn") };
-					await restrictedClient.DeleteDocumentAsync(document.Resource._self, options);
-					Console.WriteLine($"Successfully deleted document: {document.Resource.id}");
 				}
 			}
 			catch (Exception ex)

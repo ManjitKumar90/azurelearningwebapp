@@ -23,8 +23,8 @@ namespace CosmosDb.DotNetSdk.Demos
 
 			using (var client = new DocumentClient(new Uri(endpoint), masterKey))
 			{
-				await AutomaticIndexing(client);
-				await ManualIndexing(client);
+				//await AutomaticIndexing(client);
+				//await ManualIndexing(client);
 				await SetIndexPaths(client);
 			}
 		}

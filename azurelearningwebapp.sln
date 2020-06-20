@@ -17,6 +17,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CosmosDB.DotNetSDK", "Cosmo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlobOperations", "BlobOperations\BlobOperations.csproj", "{AA4245D8-7771-40CB-AD20-70CE58512523}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CosmosDBSDK", "CosmosDBSDK\CosmosDBSDK.csproj", "{B576A53E-9503-4557-BC05-CF3E81F25638}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CosmosDB.SP_Triggers_UDFS", "CosmosDB.SP_Triggers_UDFS\CosmosDB.SP_Triggers_UDFS.csproj", "{9B0D8F14-D8AD-4F75-A3D0-0DE5C237B8EF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +55,14 @@ Global
 		{AA4245D8-7771-40CB-AD20-70CE58512523}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AA4245D8-7771-40CB-AD20-70CE58512523}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AA4245D8-7771-40CB-AD20-70CE58512523}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B576A53E-9503-4557-BC05-CF3E81F25638}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B576A53E-9503-4557-BC05-CF3E81F25638}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B576A53E-9503-4557-BC05-CF3E81F25638}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B576A53E-9503-4557-BC05-CF3E81F25638}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B0D8F14-D8AD-4F75-A3D0-0DE5C237B8EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B0D8F14-D8AD-4F75-A3D0-0DE5C237B8EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B0D8F14-D8AD-4F75-A3D0-0DE5C237B8EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B0D8F14-D8AD-4F75-A3D0-0DE5C237B8EF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

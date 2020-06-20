@@ -1,6 +1,7 @@
 ﻿using Microsoft.Azure.Documents;
 using Microsoft.Azure.Documents.Client;
 using System;
+using System.Collections.ObjectModel;
 using System.Configuration;
 using System.Diagnostics;
 using System.Linq;
@@ -67,7 +68,7 @@ namespace CosmosDb.DotNetSdk.Demos
 		private async static Task CreateCollection(
 			DocumentClient client,
 			string collectionId,
-			int reservedRUs = 1000,
+			int reservedRUs = 1000 ,
 			string partitionKey = "/partitionKey")
 		{
 			Console.WriteLine();
@@ -83,11 +84,17 @@ namespace CosmosDb.DotNetSdk.Demos
 			var collectionDefinition = new DocumentCollection
 			{
 				Id = collectionId,
-				PartitionKey = partitionKeyDefinition
+				PartitionKey = partitionKeyDefinition,
+				UniqueKeyPolicy = new UniqueKeyPolicy() { 
+				 UniqueKeys = new Collection<UniqueKey>()
+                 {
+					 new UniqueKey() { Paths = new Collection<string> { "/orderId", "/refNo"} }
+                 }
+				}
 			};
-			var options = new RequestOptions { OfferThroughput = reservedRUs };
+			var options = new RequestOptions {  OfferThroughput = reservedRUs };
 
-			var result = await client.CreateDocumentCollectionAsync(MyDbDatabaseUri, collectionDefinition, options);
+			var result = await client.CreateDocumentCollectionAsync(MyDbDatabaseUri, collectionDefinition);
 			var collection = result.Resource;
 
 			Console.WriteLine("Created new collection");
