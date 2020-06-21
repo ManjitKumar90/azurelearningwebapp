@@ -21,6 +21,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CosmosDBSDK", "CosmosDBSDK\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CosmosDB.SP_Triggers_UDFS", "CosmosDB.SP_Triggers_UDFS\CosmosDB.SP_Triggers_UDFS.csproj", "{9B0D8F14-D8AD-4F75-A3D0-0DE5C237B8EF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RediscacheImplementation", "RediscacheImplementation\RediscacheImplementation.csproj", "{FEB65618-538F-4C8D-8850-3ED8F86E5275}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +65,10 @@ Global
 		{9B0D8F14-D8AD-4F75-A3D0-0DE5C237B8EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9B0D8F14-D8AD-4F75-A3D0-0DE5C237B8EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9B0D8F14-D8AD-4F75-A3D0-0DE5C237B8EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FEB65618-538F-4C8D-8850-3ED8F86E5275}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FEB65618-538F-4C8D-8850-3ED8F86E5275}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FEB65618-538F-4C8D-8850-3ED8F86E5275}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FEB65618-538F-4C8D-8850-3ED8F86E5275}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
