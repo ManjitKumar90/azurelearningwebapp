@@ -1,0 +1,12 @@
+﻿
+
+
+@if(User.Identity.IsAuthenticated)
+{
+    <div> You are Authenticated.</div>
+}
+else
+{
+    <div>You Are Not Authenticated. Please Authenticate.</div>
+    <a asp-controller="Home" asp-action="Index">Home</a>
+}
