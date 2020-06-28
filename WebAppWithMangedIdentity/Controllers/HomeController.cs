@@ -5,15 +5,14 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using AuthenticationWebApp.Models;
-using Microsoft.AspNetCore.Authorization;
+using WebAppWithMangedIdentity.Models;
 
-namespace AuthenticationWebApp.Controllers
+namespace WebAppWithMangedIdentity.Controllers
 {
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
-        
+
         public HomeController(ILogger<HomeController> logger)
         {
             _logger = logger;
@@ -24,7 +23,6 @@ namespace AuthenticationWebApp.Controllers
             return View();
         }
 
-        
         public IActionResult Privacy()
         {
             return View();
