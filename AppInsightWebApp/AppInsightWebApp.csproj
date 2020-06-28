@@ -2,6 +2,12 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UserSecretsId>a140692e-0148-4e1a-96bf-0f0fc46fb09f</UserSecretsId>
+    <ApplicationInsightsResourceId>/subscriptions/59d3083e-9fdc-419c-beef-26dc6d6f55c5/resourceGroups/AzureLearning/providers/microsoft.insights/components/IntellipatAI</ApplicationInsightsResourceId>
   </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.13.1" />
+  </ItemGroup>
 
 </Project>
